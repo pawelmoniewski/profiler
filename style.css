@@ -1,88 +1,215 @@
-<!DOCTYPE html>
-<html lang="pl">
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Moja Strona Wizytówka</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
 
-<body>
+/* KONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-    <!-- Nagłówek -->
-    <header>
-        <div class="container">
-            <h1><a href="/">Moja Strona Wizytówka</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">O mnie</a></li>
-                    <li><a href="#services">Usługi</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* NAGŁÓWEK */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
 
-    <!-- Sekcja Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Witaj na mojej stronie!</h2>
-            <p>Profesjonalna wizytówka - Projektowanie, SEO, Grafika. Dowiedz się więcej.</p>
-            <a href="#contact" class="cta-button">Skontaktuj się ze mną</a>
-        </div>
-    </section>
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: normal;
+}
 
-    <!-- Sekcja "O mnie" -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>O mnie</h2>
-            <p>Jestem pasjonatem tworzenia stron internetowych. Pomagam firmom budować profesjonalny wizerunek w Internecie.</p>
-        </div>
-    </section>
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
 
-    <!-- Sekcja "Usługi" -->
-    <section class="services" id="services">
-        <div class="container">
-            <h2>Moje Usługi</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Projektowanie Stron</h3>
-                    <p>Tworzę nowoczesne, responsywne strony internetowe.</p>
-                </div>
-                <div class="service-item">
-                    <h3>SEO</h3>
-                    <p>Optymalizuję strony, by zwiększyć ich widoczność w wyszukiwarkach.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Grafika</h3>
-                    <p>Projektuję logo i grafiki, które budują markę online.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
 
-    <!-- Sekcja "Kontakt" -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Skontaktuj się ze mną</h2>
-            <form>
-                <input type="text" id="name" placeholder="Imię" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <textarea id="message" placeholder="Wiadomość" required></textarea>
-                <button type="submit">Wyślij</button>
-            </form>
-        </div>
-    </section>
+nav ul li {
+    margin-left: 30px;
+}
 
-    <!-- Stopka -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Moja Strona Wizytówka. Wszystkie prawa zastrzeżone.</p>
-        </div>
-    </footer>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-</body>
+nav ul li a:hover {
+    color: #f4f4f4;
+}
 
-</html>
+/* SEKCJA HERO */
+.hero {
+    background: url('https://via.placeholder.com/1600x800') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* SEKCJA "O MNIE" */
+.about {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* SEKCJA USŁUGI */
+.services {
+    background-color: #f8f8f8;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* SEKCJA KONTAKT */
+.contact {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* STOPKA */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        width: 80%;
+    }
+}
