@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #fff;
 }
 
 /* KONTAINER */
@@ -21,14 +21,13 @@ body {
 
 /* NAGŁÓWEK */
 header {
-    background-color: #222;
+    background-color: #111;
     color: white;
     padding: 20px 0;
 }
 
 header h1 {
     font-size: 36px;
-    margin: 0;
     font-weight: normal;
 }
 
@@ -56,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
+    color: #ddd;
 }
 
 /* SEKCJA HERO */
@@ -88,12 +87,12 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: #444;
 }
 
-/* SEKCJA "O MNIE" */
+/* SEKCJA O MNIE */
 .about {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 80px 20px;
     text-align: center;
 }
@@ -112,7 +111,7 @@ nav ul li a:hover {
 
 /* SEKCJA USŁUGI */
 .services {
-    background-color: #f8f8f8;
+    background-color: #fff;
     padding: 80px 20px;
     text-align: center;
 }
@@ -155,7 +154,7 @@ nav ul li a:hover {
 
 /* SEKCJA KONTAKT */
 .contact {
-    background-color: #fff;
+    background-color: #f4f4f4;
     padding: 80px 20px;
     text-align: center;
 }
@@ -192,7 +191,7 @@ form button:hover {
 
 /* STOPKA */
 footer {
-    background-color: #222;
+    background-color: #111;
     color: white;
     padding: 20px 0;
     text-align: center;
