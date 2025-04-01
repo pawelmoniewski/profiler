@@ -1,69 +1,78 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Profiler Page</title>
+    <title>Moja Strona Wizytówka</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
     <!-- Nagłówek -->
     <header>
-        <div class="container">
+        <div class="header-container">
             <h1><a href="/">Moja Strona - Wizytówka</a></h1>
             <nav>
                 <ul>
-                    <li><a href="#">O mnie</a></li>
-                    <li><a href="#">Usługi</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sekcja główna -->
+    <!-- Sekcja Główna -->
     <main>
-        <section class="intro">
+        <section class="hero">
             <div class="container">
                 <h2>Witaj na mojej stronie!</h2>
-                <p>To jest moja osobista strona wizytówka. Możesz tutaj dowiedzieć się o mnie, moich usługach i skontaktować się ze mną.</p>
+                <p>Profesjonalna wizytówka. Dowiedz się więcej o moich usługach i skontaktuj się ze mną.</p>
             </div>
         </section>
 
-        <!-- Sekcja "O mnie" -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2>O mnie</h2>
-                <p>Jestem profesjonalistą w swojej dziedzinie, oferuję szeroką gamę usług. Posiadam doświadczenie w tworzeniu stron internetowych, designie i marketingu.</p>
+                <p>Jestem specjalistą z doświadczeniem w tworzeniu stron internetowych. Pomogę Ci stworzyć obecność w Internecie.</p>
             </div>
         </section>
 
-        <!-- Sekcja usług -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2>Moje Usługi</h2>
-                <ul>
-                    <li>Projektowanie stron internetowych</li>
-                    <li>Optymalizacja SEO</li>
-                    <li>Projektowanie graficzne</li>
-                </ul>
+                <div class="service-list">
+                    <div class="service-item">
+                        <h3>Projektowanie Stron</h3>
+                        <p>Tworzę unikalne strony internetowe dopasowane do potrzeb klienta.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>SEO</h3>
+                        <p>Optymalizuję strony pod kątem wyszukiwarek, by zwiększyć ich widoczność.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Grafika</h3>
+                        <p>Oferuję usługi graficzne, od logo po pełne projekty brandingowe.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Sekcja kontaktowa -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
-                <h2>Kontakt</h2>
+                <h2>Skontaktuj się ze mną</h2>
                 <form>
                     <label for="name">Imię:</label>
-                    <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                    <input type="text" id="name" name="name" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Twój email" required>
+                    <input type="email" id="email" name="email" required>
 
                     <label for="message">Wiadomość:</label>
-                    <textarea id="message" name="message" placeholder="Napisz wiadomość..." required></textarea>
+                    <textarea id="message" name="message" required></textarea>
 
                     <button type="submit">Wyślij</button>
                 </form>
@@ -77,5 +86,7 @@
             <p>&copy; 2025 Moja Strona Wizytówka. Wszystkie prawa zastrzeżone.</p>
         </div>
     </footer>
+
 </body>
+
 </html>
